@@ -10,8 +10,8 @@
 	</parent>
 	<groupId>com.commerce.platform</groupId>
 	<artifactId>shipping-service</artifactId>
-	<name/>
-	<description/>
+	<name>shipping-service</name>
+	<description>Shipping boundary service for the commerce saga platform</description>
 	<url/>
 	<licenses>
 		<license/>

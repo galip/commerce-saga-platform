@@ -10,8 +10,8 @@
 	</parent>
 	<groupId>com.commerce.platform</groupId>
 	<artifactId>payment-service</artifactId>
-	<name/>
-	<description/>
+	<name>payment-service</name>
+	<description>Payment boundary service for the commerce saga platform</description>
 	<url/>
 	<licenses>
 		<license/>

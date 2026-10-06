@@ -1,0 +1,32 @@
+# Maven
+target/
+*.class
+
+# Maven wrapper binary is intentionally not committed in this demo repository.
+.mvn/wrapper/maven-wrapper.jar
+
+# IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+
+# OS
+.DS_Store
+
+# Logs and local runtime files
+*.log
+*.pid
+*.tmp
+*.swp
+
+# Environment overrides
+.env
+.env.*
+!.env.example
+
+# Build output archives
+*.jar
+*.war
+*.ear

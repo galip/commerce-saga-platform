@@ -5,6 +5,13 @@
 
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>4.1.1</version>
+        <relativePath/>
+    </parent>
+
     <groupId>com.commerce.platform</groupId>
     <artifactId>commerce-saga-platform</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -14,8 +21,7 @@
     <description>Production-grade saga orchestration platform with outbox and idempotency patterns</description>
 
     <modules>
-		<module>saga-contracts</module>
-
+        <module>saga-contracts</module>
         <module>order-service</module>
         <module>payment-service</module>
         <module>inventory-service</module>
@@ -25,31 +31,21 @@
 
     <properties>
         <java.version>21</java.version>
-        <spring-boot.version>4.1.1</spring-boot.version>
+        <datasource-micrometer.version>2.3.0</datasource-micrometer.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring-boot.version}</version>
+                <groupId>net.ttddyy.observation</groupId>
+                <artifactId>datasource-micrometer-bom</artifactId>
+                <version>${datasource-micrometer.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-maven-plugin</artifactId>
-                    <version>${spring-boot.version}</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
 
 </project>
